@@ -9,42 +9,21 @@ async function handleSumbit() {
 
 	const form = new FormData(this);
 
-	// const response = await fetch(this.action, {
-	// 	method: this.method,
-	// 	body: form,
-	// 	headers: { Accept: 'aplication/json' },
-	// });
-
-	// if (response.ok) {
-	// 	this.reset();
-	// 	alert('¡ Gracias por contactarme !');
-	// }
-
 	fetch('/', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 		body: new URLSearchParams(form).toString(),
 	})
 		.then(() => {
-			alert('¡ Gracias por contactarme !');
+			let successContact = document.getElementById('success-contact');
+
+			successContact.style.display = 'block';
+
+			setTimeout(function () {
+				successContact.style.display = 'none';
+			}, 2000);
+
 			$form.reset();
 		})
 		.catch((error) => alert(error));
 }
-
-// const handleSubmit = (event) => {
-// 	event.preventDefault();
-
-// 	const myForm = event.target;
-// 	const formData = new FormData(myForm);
-
-// 	fetch('/', {
-// 		method: 'POST',
-// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-// 		body: new URLSearchParams(formData).toString(),
-// 	})
-// 		.then(() => alert('Thank you for your submission'))
-// 		.catch((error) => alert(error));
-// };
-
-// document.querySelector('form').addEventListener('submit', handleSubmit);
