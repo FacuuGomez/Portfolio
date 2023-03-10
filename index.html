@@ -12,130 +12,357 @@
 	<body>
 		<!-- NAV -->
 
-		<nav>
-			<div class="container-nav">
-				<div className="cover-logo">
-					<a href="#home" class="logo">
-						<img src="./assets/portfolio-logo.png" alt="logo" />
-					</a>
-				</div>
+		<header>
+			<nav>
+				<div class="container-nav">
+					<div class="cover-logo">
+						<a href="#home" class="logo">
+							<img src="./assets/portfolio-logo.png" alt="logo" />
+						</a>
+					</div>
 
-				<div class="cover-li">
-					<ul>
-						<li>
-							<a href="#about-me" title="Sobre mi">Sobre mi</a>
-						</li>
-						<li>
-							<a href="#proyects" title="Proyectos">Proyectos</a>
-						</li>
-						<li>
-							<a href="#skills" title="Tecnologias">Tecnologias</a>
-						</li>
-						<li>
-							<a href="#contact" title="Contacto">Contacto</a>
-						</li>
-					</ul>
+					<div class="cover-li">
+						<ul>
+							<li>
+								<a href="#about-me" title="Sobre mi">Sobre mi</a>
+							</li>
+							<li>
+								<a href="#proyects" title="Proyectos">Proyectos</a>
+							</li>
+							<li>
+								<a href="#skills" title="Tecnologias">Tecnologías</a>
+							</li>
+							<li>
+								<a href="#contact" title="Contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</header>
 
 		<!-- BANNER -->
 
-		<section>
-			<div class="container-banner">
-				<img
-					class="background-banner"
-					src="./assets/codigo-js.jpg"
-					alt="codigo-js"
-				/>
+		<main>
+			<section class="container">
+				<div class="container-banner" id="home">
+					<img
+						class="background-banner"
+						src="./assets/binario.jpg"
+						alt="codigo-js"
+					/>
 
-				<div class="cover-info">
-					<h1>Hola soy</h1>
-					<h2>Facundo Gómez</h2>
-					<p>
-						Desarrollador web fullstack con experiencia en e-commerce realizado
-						en el curso de Henry utilizando tecnologias como Javascript /
-						React.js / Node.js entre otras librerias y frameworks.
-					</p>
-
-					<div class="cover-icons">
-						<div class="icon">
-							<a
-								href="https://github.com/FacuuGomez"
-								target="_blank"
-								title="Github"
-							>
-								<img src="./assets/github-icon-w.png" alt="github" />
-							</a>
-						</div>
-						<div class="icon">
-							<a
-								href="https://www.linkedin.com/in/facu-gomez/"
-								target="_blank"
-								title="Linkedin"
-							>
-								<img src="./assets/linkedin-icon-w.png" alt="linkedin" />
-							</a>
-						</div>
-
-						<div class="icon">
-							<a
-								href="https://api.whatsapp.com/send?phone=1141786108"
-								target="_blank"
-								title="Whatsapp"
-							>
-								<img src="./assets/whatsapp-icon-w.png" alt="whatsapp" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ABOUT ME  -->
-
-		<section>
-			<div className="container-about " id="about-me">
-				<div className="cover-about">
-					<div className="cover-text">
-						<h1>Sobre mi</h1>
+					<div class="cover-info">
+						<h1>Hola soy</h1>
+						<h2>Facundo Gómez</h2>
 						<p>
-							Empece la universidad estudiando Ingeniería Mecánica en donde
-							toque código por primera vez y me costo mucho pero fue ahí donde
-							me di cuenta que me gustó.
-							<br />
-							En busca de trabajo paralelo a la carrera me recomendaron Henry
-							para el cual puse en pausa la universidad, debido a eso decidí al
-							volver a cursar cambiarme a Ingeniería Informática. El cambio fue
-							ya que quería enfocar todo mi aprendizaje y conocimientos
-							adquiridos en Henry para potenciar más mi carrera y conseguir un
-							buen trabajo de esto que tanto me gustó, la programación.
+							Desarrollador web fullstack con experiencia en e-commerce
+							realizado en el curso de Henry utilizando tecnologias como
+							Javascript / React.js / Node.js entre otras librerias y
+							frameworks.
 						</p>
 
-						<div className="cover-btn-cv">
-							<a
-								href="./assets/Facundo-Gomez.pdf"
-								download="Facundo-Gomez"
-								title="CV"
-							>
-								Descargar CV
+						<div class="cover-icons">
+							<div class="icon">
+								<a
+									href="https://github.com/FacuuGomez"
+									target="_blank"
+									title="Github"
+								>
+									<img src="./assets/github-icon-w.png" alt="github" />
+								</a>
+							</div>
+							<div class="icon">
+								<a
+									href="https://www.linkedin.com/in/facu-gomez/"
+									target="_blank"
+									title="Linkedin"
+								>
+									<img src="./assets/linkedin-icon-w.png" alt="linkedin" />
+								</a>
+							</div>
+
+							<div class="icon">
+								<a
+									href="https://api.whatsapp.com/send?phone=1141786108"
+									target="_blank"
+									title="Whatsapp"
+								>
+									<img src="./assets/whatsapp-icon-w.png" alt="whatsapp" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ABOUT ME  -->
+
+			<section>
+				<div class="container-about" id="about-me">
+					<div class="cover-about">
+						<div class="cover-text">
+							<h1>Sobre mi</h1>
+							<p>
+								Empece la universidad estudiando Ingeniería Mecánica en donde
+								toque código por primera vez y me costo mucho pero fue ahí donde
+								me di cuenta que me gustó.
+								<br />
+								En busca de trabajo paralelo a la carrera me recomendaron Henry
+								para el cual puse en pausa la universidad, debido a eso decidí
+								al volver a cursar cambiarme a Ingeniería Informática. El cambio
+								fue ya que quería enfocar todo mi aprendizaje y conocimientos
+								adquiridos en Henry para potenciar más mi carrera y conseguir un
+								buen trabajo de esto que tanto me gustó, la programación.
+							</p>
+
+							<div class="cover-btn-cv gradient-btn">
+								<a
+									href="./assets/Facundo-Gomez.pdf"
+									download="Facundo-Gomez"
+									title="CV"
+								>
+									Descargar CV
+								</a>
+							</div>
+						</div>
+
+						<div class="cover-img-me">
+							<img src="/assets/me.jpg" alt="me" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROYECTS -->
+
+			<section>
+				<div class="container-proyects" id="proyects">
+					<h1>Proyectos</h1>
+					<div class="cover-cards">
+						<div class="card">
+							<div class="cover-img">
+								<img src="./assets/mymanga-store.jpg" alt="MyManga" />
+							</div>
+
+							<div class="cover-text-card">
+								<h2>My Manga - PF</h2>
+								<p>
+									E-commerce de mangas digitales realizado en grupo durante el
+									curso de Henry utilizando como metodologia de trabajo scrum.
+								</p>
+							</div>
+
+							<div class="cover-btn-card">
+								<a
+									href="https://github.com/IvanaSDW/pf_with_vite"
+									target="_blank"
+									title="Repositorio"
+								>
+									Repo
+								</a>
+
+								<a
+									href="https://mymangastore.netlify.app/"
+									target="_blank"
+									title="Demo"
+								>
+									Demo
+								</a>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="cover-img">
+								<img src="./assets/pokemon.jpg" alt="Pokemon" />
+							</div>
+							<div class="cover-text-card">
+								<h2>Pokemon - PI</h2>
+								<p>
+									Proyecto individual realizado en la cursada de Henry con
+									distintos tipos de filtrados y ordenamientos.
+								</p>
+							</div>
+
+							<div class="cover-btn-card">
+								<a
+									href="https://github.com/FacuuGomez/PI-Pokemons"
+									target="_blank"
+									title="Repositorio"
+								>
+									Repo
+								</a>
+
+								<a
+									href="https://github.com/FacuuGomez/PI-Pokemons"
+									target="_blank"
+									title="Demo"
+								>
+									Demo
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- SKILLS -->
+
+			<section class="section-skills">
+				<div class="wave-1" style="height: 150px; overflow: hidden">
+					<svg
+						viewBox="0 0 500 150"
+						preserveAspectRatio="none"
+						style="height: 100%; width: 100%"
+					>
+						<path
+							d="M0.00,49.98 C162.25,157.40 361.45,-46.87 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+							style="stroke: none; fill: #282c34"
+						></path>
+					</svg>
+				</div>
+
+				<div class="container-skills" id="skills">
+					<div class="cover-skills">
+						<h1>Tecnologías</h1>
+
+						<div class="cover-box">
+							<div class="box-skill">
+								<img src="./assets/html.png" alt="HTML" />
+								<h3>HTML</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/css.png" alt="CSS" />
+								<h3>CSS</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/javascript.png" alt="Javascript" />
+								<h3>Javascript</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/react.png" alt="React" />
+								<h3>React</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/redux.png" alt="Redux" />
+								<h3>Redux</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/node-js.png" alt="Node JS" />
+								<h3>Node JS</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/postgresql.png" alt="PostgreSQL" />
+								<h3>PostgreSQL</h3>
+							</div>
+							<div class="box-skill">
+								<img src="./assets/sequelize.png" alt="Sequelize" />
+								<h3>Sequelize</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT -->
+
+			<section>
+				<div class="container-contact" id="contact">
+					<div class="container-form">
+						<h1>Contacto</h1>
+						<form>
+							<label htmlFor="name">Nombre</label>
+							<input type="text" name="name" required />
+
+							<label htmlFor="email">Correo electronico</label>
+							<input type="email" name="email" required />
+
+							<label htmlFor="subject">Asunto</label>
+							<input type="text" name="subject" required />
+
+							<label htmlFor="text">Mensaje</label>
+							<textarea name="message" required></textarea>
+
+							<div class="cover-btn-submit">
+								<div class="cover-gradient gradient-btn-submit">
+									<button type="submit">Enviar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+
+		<footer>
+			<div class="wave-2" style="height: 150px; overflow: hidden">
+				<svg
+					viewBox="0 0 500 150"
+					preserveAspectRatio="none"
+					style="height: 100%; width: 100%"
+				>
+					<path
+						d="M-9.30,89.30 C211.34,208.72 367.09,-30.08 536.40,150.48 L500.00,150.00 L0.00,150.00 Z"
+						style="stroke: none; fill: #282c34"
+					></path>
+				</svg>
+			</div>
+
+			<div class="container-footer">
+				<div class="cover-footer">
+					<div class="box-footer">
+						<div class="logo-footer">
+							<a href="/">
+								<img src="{image}" alt="codigo-logo" />
 							</a>
+							<h5>FG</h5>
+						</div>
+						<div class="terms">
+							Facundo Gomez fullstack web developer para la solución de
+							problemas y automatización de tareas.
 						</div>
 					</div>
 
-					<div className="cover-img-me">
-						<img src="/assets/me.jpg" alt="me" />
+					<div class="box-footer">
+						<h2>Contacto</h2>
+						<div class="icons-footer">
+							<div class="icon-footer">
+								<a
+									href="https://github.com/FacuuGomez"
+									target="_blank"
+									title="Github"
+								>
+									<img src="{github}" alt="github" />
+									Github
+								</a>
+							</div>
+							<div class="icon-footer">
+								<a
+									href="https://www.linkedin.com/in/facu-gomez/"
+									target="_blank"
+									title="LinkedIn"
+								>
+									<img src="{linkedin}" alt="linkedin" />
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="icon-footer">
+								<a
+									href="https://api.whatsapp.com/send?phone=1141786108"
+									target="_blank"
+									title="Whatsapp"
+								>
+									<img src="{whatsapp}" alt="whatsapp" />
+									Whatsapp
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<!-- PROYECTS -->
-
-		<!-- SKILLS -->
-
-		<!-- CONTACT -->
-
-		<!-- FOOTER -->
+		</footer>
 	</body>
 </html>
