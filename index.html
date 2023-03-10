@@ -271,7 +271,7 @@
 				<div class="container-contact" id="contact">
 					<div class="container-form">
 						<h1>Contacto</h1>
-						<form id="form" name="contact" method="POST" data-netlify="true">
+						<!-- <form id="form" name="contact" method="POST" data-netlify="true">
 							<label htmlFor="name" for="name">Nombre</label>
 							<input type="text" name="name" required />
 
@@ -289,6 +289,22 @@
 									<button type="submit">Enviar</button>
 								</div>
 							</div>
+						</form> -->
+
+						<form name="contact" method="POST" data-netlify="true">
+							<p>
+								<label>Name: <input type="text" name="name" /></label>
+							</p>
+							<p>
+								<label>Email: <input type="email" name="email" /></label>
+							</p>
+
+							<p>
+								<label>Message: <textarea name="message"></textarea></label>
+							</p>
+							<p>
+								<button type="submit">Send</button>
+							</p>
 						</form>
 					</div>
 				</div>
