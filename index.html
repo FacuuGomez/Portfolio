@@ -266,21 +266,22 @@
 
 			<!-- CONTACT -->
 
+			<!-- action="/index.html" -->
 			<section>
 				<div class="container-contact" id="contact">
 					<div class="container-form">
 						<h1>Contacto</h1>
-						<form>
-							<label htmlFor="name">Nombre</label>
+						<form id="form" name="contact" method="POST" data-netlify="true">
+							<label htmlFor="name" for="name">Nombre</label>
 							<input type="text" name="name" required />
 
-							<label htmlFor="email">Correo electronico</label>
+							<label htmlFor="email" for="email">Correo electronico</label>
 							<input type="email" name="email" required />
 
-							<label htmlFor="subject">Asunto</label>
+							<label htmlFor="subject" for="subject">Asunto</label>
 							<input type="text" name="subject" required />
 
-							<label htmlFor="text">Mensaje</label>
+							<label htmlFor="text" for="message">Mensaje</label>
 							<textarea name="message" required></textarea>
 
 							<div class="cover-btn-submit">
