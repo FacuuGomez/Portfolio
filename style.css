@@ -164,6 +164,7 @@ nav {
 }
 
 .icon:hover {
+	opacity: 0.7;
 	transform: translateY(-3px);
 	transition: all 0.2s ease-in-out;
 }
@@ -376,7 +377,7 @@ nav {
 	justify-content: center;
 	font-size: 50px;
 	font-weight: 600;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .cover-skills {
@@ -550,6 +551,7 @@ footer {
 
 .container-footer {
 	color: var(--font-light);
+	font-size: 18px;
 }
 
 .wave-2 {
@@ -559,76 +561,73 @@ footer {
 	color: var(--background-dark);
 }
 
-/* .container-footer {
+.container-footer {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 1000px;
-	margin: auto;
-	margin-top: 180px;
-	padding: 20px;
+	justify-content: center;
+	padding-bottom: 50px;
 }
 
-.box-footer {
+.cover-footer {
+	width: 1000px;
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cover-logo-footer {
 	padding-bottom: 20px;
 }
 
-.box-footer h2 {
-	color: #282c34;
-	margin-bottom: 20px;
-	font-weight: 600;
+.box-footer {
+	width: 300px;
 }
 
-.box-footer a {
-	color: #282c34;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
+.box-footer h2 {
+	background-image: linear-gradient(90deg, #008dd2 58%, #61ff56 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
-.icon-footer {
-	margin-bottom: 10px;
+
+.box-terms {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box-contact {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.box-contact h2 {
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+}
+
+.icon-footer a {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 15px;
+	text-decoration: none;
+	color: var(--font-light);
+	transition: all 0.2s ease-in-out;
+}
+
+.icon-footer a:hover {
+	opacity: 0.7;
+	transform: translateX(-5px);
+}
+
+.icon-footer a:active {
+	transform: translateX(5px);
 }
 
 .icon-footer img {
-	margin-right: 10px;
+	padding-left: 10px;
 }
-
-.icon-footer:hover {
-	opacity: 0.7;
-}
-
-.terms {
-	max-width: 350px;
-	margin-top: 20px;
-	font-weight: 400;
-	font-size: 16px;
-	color: #282c34;
-}
-
-.logo-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #282c34;
-	max-width: 100px;
-	border-radius: 15px;
-}
-
-.logo-footer a {
-	max-height: 50px;
-}
-
-.logo-footer img {
-	width: 50px;
-}
-
-.logo-footer h5 {
-	color: #008dd2;
-	font-size: 25px;
-	font-weight: 300;
-} */
 
 /* RESPONSIVE DESING */
 
