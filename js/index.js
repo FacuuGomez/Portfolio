@@ -21,7 +21,7 @@ async function handleSumbit() {
 
 			setTimeout(function () {
 				successContact.style.display = 'none';
-			}, 2000);
+			}, 2500);
 
 			$form.reset();
 		})
