@@ -25,7 +25,10 @@ async function handleSumbit() {
 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 		body: new URLSearchParams(form).toString(),
 	})
-		.then(() => alert('Thank you for your submission'))
+		.then(() => {
+			alert('¡ Gracias por contactarme !');
+			$form.reset();
+		})
 		.catch((error) => alert(error));
 }
 
