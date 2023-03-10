@@ -1,18 +1,47 @@
 // SEND EMAIL
 
-const handleSubmit = (event) => {
+const $form = document.querySelector('#form');
+
+$form.addEventListener('submit', handleSumbit);
+
+async function handleSumbit() {
 	event.preventDefault();
 
-	const myForm = event.target;
-	const formData = new FormData(myForm);
+	const form = new FormData(this);
+
+	// const response = await fetch(this.action, {
+	// 	method: this.method,
+	// 	body: form,
+	// 	headers: { Accept: 'aplication/json' },
+	// });
+
+	// if (response.ok) {
+	// 	this.reset();
+	// 	alert('¡ Gracias por contactarme !');
+	// }
 
 	fetch('/', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-		body: new URLSearchParams(formData).toString(),
+		body: new URLSearchParams(form).toString(),
 	})
 		.then(() => alert('Thank you for your submission'))
 		.catch((error) => alert(error));
-};
+}
 
-document.querySelector('form').addEventListener('submit', handleSubmit);
+// const handleSubmit = (event) => {
+// 	event.preventDefault();
+
+// 	const myForm = event.target;
+// 	const formData = new FormData(myForm);
+
+// 	fetch('/', {
+// 		method: 'POST',
+// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+// 		body: new URLSearchParams(formData).toString(),
+// 	})
+// 		.then(() => alert('Thank you for your submission'))
+// 		.catch((error) => alert(error));
+// };
+
+// document.querySelector('form').addEventListener('submit', handleSubmit);
