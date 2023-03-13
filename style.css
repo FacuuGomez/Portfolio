@@ -230,6 +230,32 @@ nav {
 	font-size: 20px;
 }
 
+#animation {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+@keyframes move {
+	0% {
+		transform: translate(100%);
+	}
+}
+
+/* .animation-left {
+	animation: animationLeft 1s;
+}
+
+@keyframes animation-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+} */
+
 .cover-img-me img {
 	width: 300px;
 	border-radius: 20px;
@@ -306,6 +332,20 @@ nav {
 	font-weight: 600;
 }
 
+#animation-proyects {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+@keyframes animation-left {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
 .cover-proyects {
 	max-width: 1000px;
 }
@@ -316,6 +356,24 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+#animation-cards {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+@keyframes animation-down {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .card {
@@ -416,6 +474,11 @@ nav {
 	max-width: 1000px;
 }
 
+#animation-skills {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
 .skills {
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(2px);
@@ -493,6 +556,11 @@ nav {
 
 .cover-contact {
 	max-width: 1000px;
+}
+
+#animation-contact {
+	opacity: 0;
+	transition: all 0.5s;
 }
 
 .cover-form {
