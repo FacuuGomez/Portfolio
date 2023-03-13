@@ -199,6 +199,7 @@ nav {
 	color: var(--font-light);
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .cover-about {
@@ -240,21 +241,6 @@ nav {
 		transform: translate(100%);
 	}
 }
-
-/* .animation-left {
-	animation: animationLeft 1s;
-}
-
-@keyframes animation-left {
-	0% {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-} */
 
 .cover-img-me img {
 	width: 300px;
