@@ -745,9 +745,19 @@ footer {
 	padding-bottom: 20px;
 }
 
+.icons-footer {
+	display: inline-flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.icon-footer {
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
 .icon-footer a {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 	padding-bottom: 15px;
 	text-decoration: none;
