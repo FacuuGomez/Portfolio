@@ -110,3 +110,18 @@ function scrollContact() {
 }
 
 window.addEventListener('scroll', scrollContact);
+
+// RESPONSIVE NAVBAR BUTTON
+
+const buttonBar = document.getElementsByClassName('button-bar')[0];
+const coverLi = document.getElementsByClassName('cover-li')[0];
+const containerNav = document.getElementsByClassName('container-nav')[0];
+
+buttonBar.addEventListener('click', () => {
+	if (screen.width < 650) {
+		coverLi.classList.toggle('active');
+		open = true;
+	} else {
+		containerNav.style.height = '60px';
+	}
+});

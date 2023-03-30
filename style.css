@@ -61,13 +61,14 @@ nav {
 .container-nav {
 	display: flex;
 	justify-content: center;
-	height: 60px;
+	padding: 10px 0px;
 }
 
 .cover-nav {
 	width: 1000px;
 	display: flex;
 	justify-content: space-between;
+	margin: 0px 30px;
 }
 
 .box-nav {
@@ -104,6 +105,32 @@ nav {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.button-bar {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+.button-bar:hover {
+	opacity: 0.7;
+}
+
+.button-bar .bar {
+	height: 3px;
+	width: 100%;
+	background-color: var(--font-light);
+	border-radius: 10px;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -782,5 +809,38 @@ footer {
 /* RESPONSIVE DESING */
 /* ---------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
+	/* --------------------------- */
+	/* NAV */
+	/* --------------------------- */
+
+	.button-bar {
+		display: flex;
+	}
+
+	.cover-nav {
+		flex-direction: column;
+	}
+
+	.cover-li {
+		display: none;
+		justify-content: center;
+	}
+
+	.cover-li.active {
+		display: flex;
+	}
+
+	.cover-li ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.cover-li li {
+		padding-bottom: 5px;
+	}
+
+	.cover-li a {
+		padding: 0px;
+	}
 }
