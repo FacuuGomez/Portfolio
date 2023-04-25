@@ -148,8 +148,6 @@ nav {
 	justify-content: center;
 	color: var(--font-light);
 	font-size: 20px;
-
-	background-color: red;
 }
 
 .cover-banner {
@@ -240,6 +238,7 @@ nav {
 
 .cover-text {
 	padding-right: 50px;
+	padding-bottom: 25px;
 }
 
 .cover-text h1 {
@@ -260,7 +259,7 @@ nav {
 
 #animation {
 	opacity: 0;
-	transition: all 0.5s;
+	transition: all 3s;
 }
 
 @keyframes move {
@@ -330,7 +329,7 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 60px 0px;
+	padding: 80px 0px;
 }
 
 .container-proyects h1 {
@@ -568,7 +567,8 @@ nav {
 }
 
 .cover-contact {
-	max-width: 1000px;
+	max-width: 600px;
+	width: 100%;
 }
 
 #animation-contact {
@@ -578,7 +578,8 @@ nav {
 
 .cover-form {
 	display: flex;
-	width: 500px;
+	justify-content: center;
+	/* width: 500px; */
 	flex-direction: column;
 
 	background-color: rgba(0, 0, 0, 0.3);
@@ -733,6 +734,7 @@ footer {
 	width: 1000px;
 	display: flex;
 	justify-content: space-between;
+	padding: 0px 30px;
 }
 
 .cover-logo-footer {
@@ -809,6 +811,53 @@ footer {
 /* RESPONSIVE DESING */
 /* ---------------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 1060px) {
+	/* --------------------------- */
+	/* BANNER */
+	/* --------------------------- */
+
+	.container-banner {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.cover-banner {
+		padding: 0px 30px;
+		width: 800px;
+		/* max-width: 650px; */
+	}
+
+	/* --------------------------- */
+	/* ABOUT ME */
+	/* --------------------------- */
+
+	.cover-about {
+		padding: 0px 30px;
+	}
+
+	/* --------------------------- */
+	/* SKILLS */
+	/* --------------------------- */
+
+	.skills {
+		margin: 30px 0px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.background-banner {
+		content: url(./assets/codigo-js2.jpg);
+	}
+
+	/* --------------------------- */
+	/* SKILLS */
+	/* --------------------------- */
+
+	.skills {
+		margin: 30px;
+	}
+}
+
 @media screen and (max-width: 650px) {
 	/* --------------------------- */
 	/* NAV */
@@ -820,13 +869,13 @@ footer {
 
 	.cover-nav {
 		flex-direction: column;
-		max-width: 650px;
+		/* max-width: 650px; */
 	}
 
 	.cover-li {
 		display: none;
 		justify-content: center;
-		padding-top: 10px;
+		padding-top: 5px;
 	}
 
 	.cover-li.active {
@@ -844,5 +893,211 @@ footer {
 
 	.cover-li a {
 		padding: 0px;
+	}
+
+	/* --------------------------- */
+	/* BANNER */
+	/* --------------------------- */
+
+	.container-banner {
+		height: 100vh;
+	}
+
+	.background-banner {
+		position: absolute;
+		content: url(./assets/codigo-js3.jpg);
+	}
+
+	.cover-banner {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+		height: 80%;
+		padding: 0px 20px;
+	}
+
+	.cover-info {
+		position: absolute;
+		width: 80%;
+	}
+
+	/* --------------------------- */
+	/* ABOUT ME */
+	/* --------------------------- */
+
+	.cover-about {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 45px 20px;
+	}
+
+	.cover-text {
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+
+	.cover-text h1 {
+		display: flex;
+		justify-content: center;
+		background-image: var(--gradient-color);
+	}
+
+	.cover-img-me img {
+		content: url(./assets/Facundo-Gomez-degradado-mobile.jpg);
+		height: 300px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.cover-btn-cv {
+		left: 37%;
+	}
+
+	/* --------------------------- */
+	/* PROYECTS */
+	/* --------------------------- */
+
+	.container-proyects {
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+		height: 380px;
+	}
+
+	.cover-btn-card {
+		left: 35%;
+	}
+
+	/* --------------------------- */
+	/* SKILLS */
+	/* --------------------------- */
+
+	.skills {
+		margin: 0px 30px;
+	}
+
+	/* --------------------------- */
+	/* CONTACT */
+	/* --------------------------- */
+
+	.cover-form {
+		margin: 30px;
+	}
+
+	/* --------------------------- */
+	/* FOOTER */
+	/* --------------------------- */
+
+	.container-footer {
+		padding: 30px;
+	}
+
+	.cover-footer {
+		width: 100%;
+	}
+
+	.wave-2 path {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.cover-btn-cv {
+		left: 35%;
+	}
+
+	.card {
+		height: 350px;
+	}
+
+	.cover-btn-card {
+		left: 33%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.cover-btn-cv {
+		left: 30%;
+	}
+
+	.card {
+		height: 330px;
+	}
+
+	.cover-btn-card {
+		left: 28%;
+	}
+
+	/* --------------------------- */
+	/* FOOTER */
+	/* --------------------------- */
+
+	.cover-footer {
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.box-contact {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.box-footer h2 {
+		background-image: var(--gradient-color2);
+	}
+
+	.box-contact h2 {
+		display: flex;
+		justify-content: flex-start;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.icons-footer {
+		display: inline-flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.icon-footer {
+		display: inline-flex;
+		justify-content: flex-start;
+	}
+
+	.icon-footer a {
+		display: flex;
+		align-items: center;
+		padding-bottom: 15px;
+		text-decoration: none;
+		color: var(--font-light);
+		transition: all 0.2s ease-in-out;
+	}
+
+	.icon-footer a:hover {
+		opacity: 0.7;
+		transform: translateX(5px);
+	}
+
+	.icon-footer a:active {
+		transform: translateX(-5px);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.cover-btn-cv {
+		left: 25%;
+	}
+
+	.card {
+		height: 320px;
+	}
+
+	.cover-btn-card {
+		left: 23%;
 	}
 }

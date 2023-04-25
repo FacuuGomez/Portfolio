@@ -1,4 +1,6 @@
+/* ---------------------------------------------------------------------------------------- */
 // SEND EMAIL
+/* ---------------------------------------------------------------------------------------- */
 
 const $form = document.querySelector('#form');
 
@@ -28,7 +30,9 @@ async function handleSumbit() {
 		.catch((error) => alert(error));
 }
 
+/* ---------------------------------------------------------------------------------------- */
 // ANIMATION ABOUT
+/* ---------------------------------------------------------------------------------------- */
 
 function scrollAbout() {
 	let animation = document.getElementById('animation');
@@ -45,7 +49,9 @@ function scrollAbout() {
 
 window.addEventListener('scroll', scrollAbout);
 
+/* ---------------------------------------------------------------------------------------- */
 // ANIMATION PROYECTS
+/* ---------------------------------------------------------------------------------------- */
 
 function scrollCards() {
 	let animation = document.getElementById('animation-cards');
@@ -77,7 +83,9 @@ function scrollProyects() {
 
 window.addEventListener('scroll', scrollProyects);
 
+/* ---------------------------------------------------------------------------------------- */
 // ANIMATION SKILLS
+/* ---------------------------------------------------------------------------------------- */
 
 function scrollSkills() {
 	let animation = document.getElementById('animation-skills');
@@ -94,7 +102,9 @@ function scrollSkills() {
 
 window.addEventListener('scroll', scrollSkills);
 
+/* ---------------------------------------------------------------------------------------- */
 // ANIMATION CONTACT
+/* ---------------------------------------------------------------------------------------- */
 
 function scrollContact() {
 	let animation = document.getElementById('animation-contact');
@@ -111,12 +121,35 @@ function scrollContact() {
 
 window.addEventListener('scroll', scrollContact);
 
+/* ---------------------------------------------------------------------------------------- */
 // RESPONSIVE NAVBAR BUTTON
+/* ---------------------------------------------------------------------------------------- */
 
 const buttonBar = document.getElementsByClassName('button-bar')[0];
 const coverLi = document.getElementsByClassName('cover-li')[0];
 const containerNav = document.getElementsByClassName('container-nav')[0];
 
 buttonBar.addEventListener('click', () => {
+	coverLi.classList.toggle('active');
+});
+
+const buttonAbout = document.getElementsByClassName('li-a')[0];
+const buttonProyects = document.getElementsByClassName('li-a')[1];
+const buttonSkills = document.getElementsByClassName('li-a')[2];
+const buttonContact = document.getElementsByClassName('li-a')[3];
+
+buttonAbout.addEventListener('click', () => {
+	coverLi.classList.toggle('active');
+});
+
+buttonProyects.addEventListener('click', () => {
+	coverLi.classList.toggle('active');
+});
+
+buttonSkills.addEventListener('click', () => {
+	coverLi.classList.toggle('active');
+});
+
+buttonContact.addEventListener('click', () => {
 	coverLi.classList.toggle('active');
 });
