@@ -863,6 +863,10 @@ footer {
 	/* NAV */
 	/* --------------------------- */
 
+	nav {
+		backdrop-filter: blur(5px);
+	}
+
 	.button-bar {
 		display: flex;
 	}
@@ -921,6 +925,7 @@ footer {
 	.cover-info {
 		position: absolute;
 		width: 80%;
+		backdrop-filter: blur(5px);
 	}
 
 	/* --------------------------- */
