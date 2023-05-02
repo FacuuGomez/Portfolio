@@ -930,7 +930,8 @@ footer {
 	.cover-about {
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 45px 20px;
+		align-items: flex-start;
+		padding: 60px 20px;
 	}
 
 	.cover-text {
@@ -939,20 +940,30 @@ footer {
 		padding-bottom: 0;
 	}
 
+	.cover-text p {
+		margin-bottom: 40px;
+	}
+
 	.cover-text h1 {
 		display: flex;
 		justify-content: center;
 		background-image: var(--gradient-color);
-		padding-top: 20px;
+		/* padding-top: 20px; */
+	}
+
+	.cover-img-me {
+		display: flex;
+		align-items: flex-start;
+		height: 45%;
 	}
 
 	.cover-img-me img {
 		content: url(./assets/Facundo-Gomez-degradado-mobile.jpg);
-		height: 200px;
-		width: 200px;
+		height: 300px;
+		width: 300px;
 		object-fit: cover;
 		border-radius: 50%;
-		padding-top: 20px;
+		/* padding-top: 20px; */
 	}
 
 	.cover-btn-cv {
@@ -1112,5 +1123,13 @@ footer {
 
 	.cover-btn-card {
 		left: 23%;
+	}
+
+	/* --------------------------- */
+	/* ABOUT ME */
+	/* --------------------------- */
+
+	.cover-img-me img {
+		padding-top: 40px;
 	}
 }
