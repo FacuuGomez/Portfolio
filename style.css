@@ -948,7 +948,7 @@ footer {
 		display: flex;
 		justify-content: center;
 		background-image: var(--gradient-color);
-		/* padding-top: 20px; */
+		padding-top: 15px;
 	}
 
 	.cover-img-me {
