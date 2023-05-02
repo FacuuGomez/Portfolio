@@ -958,7 +958,7 @@ footer {
 	}
 
 	.cover-img-me img {
-		content: url(./assets/Facundo-Gomez-degradado-mobile.jpg);
+		content: url(./assets/Facundo-Gomez-mobile.jpg);
 		height: 300px;
 		width: 300px;
 		object-fit: cover;
