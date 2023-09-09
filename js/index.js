@@ -6,10 +6,15 @@ const $form = document.querySelector('#form');
 
 $form.addEventListener('submit', handleSumbit);
 
+console.log('$form', $form);
+
 async function handleSumbit() {
 	event.preventDefault();
 
 	const form = new FormData(this);
+
+	console.log('form', form);
+	console.log('this', this);
 
 	fetch('/', {
 		method: 'POST',
