@@ -246,6 +246,11 @@ nav {
 	padding-bottom: 25px;
 }
 
+#animation-cv {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
 .cover-text h1 {
 	background-image: linear-gradient(90deg, #008dd2 0%, #61ff56 30%);
 	-webkit-background-clip: text;
@@ -339,7 +344,7 @@ nav {
 }
 
 .container-proyects h1 {
-	background-image: linear-gradient(90deg, #008dd2 0%, #61ff56 100%);
+	background-image: linear-gradient(90deg, #008dd2 40%, #61ff56 60%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;

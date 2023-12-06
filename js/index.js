@@ -54,6 +54,21 @@ function scrollAbout() {
 
 window.addEventListener('scroll', scrollAbout);
 
+function scrollCv() {
+	let animation = document.getElementById('animation-cv');
+
+	let scrollTop = animation.getBoundingClientRect().top;
+
+	let screenSize = window.innerHeight;
+
+	if (scrollTop < screenSize) {
+		animation.style.animation = 'animation-left 1s ease-out';
+		animation.style.opacity = 1;
+	}
+}
+
+window.addEventListener('scroll', scrollCv);
+
 /* ---------------------------------------------------------------------------------------- */
 // ANIMATION PROYECTS
 /* ---------------------------------------------------------------------------------------- */
