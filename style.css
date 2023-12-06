@@ -1,11 +1,12 @@
 /* ---------------------------------------------------------------------------------------- */
 
 :root {
-	--gradient-color: linear-gradient(90deg, #008dd2 0%, #61ff56 100%);
+	--gradient-color: linear-gradient(90deg, #008bd1 #61ff56 100%);
 	--gradient-color2: linear-gradient(90deg, #008dd2 0%, #61ff56 60%);
 
 	--primary-color: #008dd2;
 	--secundary-color: #61ff56;
+	--blend-color: #30c694;
 
 	--background-light: #fafbfe;
 	--background-dark: #282c34;
