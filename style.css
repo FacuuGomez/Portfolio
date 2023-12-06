@@ -106,7 +106,7 @@ nav {
 }
 
 .cover-li a:hover {
-	background-image: var(--gradient-color);
+	background-image: linear-gradient(90deg, #008dd2, #61ff56 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -292,7 +292,8 @@ nav {
 }
 
 .cover-btn-cv:hover {
-	background-image: var(--gradient-color);
+	/* background-image: var(--gradient-color); */
+	background-image: linear-gradient(90deg, #008dd2, #61ff56 100%);
 }
 
 .gradient-btn {
@@ -310,7 +311,7 @@ nav {
 	z-index: -1;
 	margin: -3px;
 	border-radius: inherit;
-	background: var(--gradient-color);
+	background-image: linear-gradient(90deg, #008dd2, #61ff56 100%);
 }
 
 .cover-btn-cv a {
@@ -319,7 +320,7 @@ nav {
 	font-size: 20px;
 	font-weight: 700;
 	text-decoration: none;
-	transition: all 0.3s;
+	/* transition: all 0.3s; */
 }
 
 .cover-btn-cv a:hover {
@@ -455,7 +456,8 @@ nav {
 }
 
 .cover-btn-card a:hover {
-	background-image: var(--gradient-color);
+	background-image: linear-gradient(90deg, #008dd2, #61ff56 100%);
+
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -611,7 +613,7 @@ nav {
 	font-size: 20px;
 	font-weight: 600;
 	text-decoration: none;
-	transition: color 0.3s;
+	/* transition: color 0.3s; */
 }
 
 .cover-form button:hover {
@@ -647,7 +649,7 @@ nav {
 }
 
 .cover-gradient:hover {
-	background-image: var(--gradient-color);
+	background-image: linear-gradient(90deg, #008dd2, #61ff56 100%);
 }
 
 textarea {
