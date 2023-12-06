@@ -6,15 +6,15 @@ const $form = document.querySelector('#form');
 
 $form.addEventListener('submit', handleSumbit);
 
-console.log('$form', $form);
+// console.log('$form', $form);
 
 async function handleSumbit() {
 	event.preventDefault();
 
 	const form = new FormData(this);
 
-	console.log('form', form);
-	console.log('this', this);
+	// console.log('form', form);
+	// console.log('this', this);
 
 	fetch('/', {
 		method: 'POST',
@@ -74,16 +74,19 @@ window.addEventListener('scroll', scrollCv);
 /* ---------------------------------------------------------------------------------------- */
 
 function scrollCards() {
-	let animation = document.getElementById('animation-cards');
+	let animations = document.getElementsByClassName('animation-card');
 
-	let scrollTop = animation.getBoundingClientRect().top;
+	let animationsArray = Array.from(animations);
+	animationsArray.forEach((animation) => {
+		let scrollTop = animation.getBoundingClientRect().top;
 
-	let screenSize = window.innerHeight / 1.5;
+		let screenSize = window.innerHeight / 1.5;
 
-	if (scrollTop < screenSize) {
-		animation.style.animation = 'animation-down 1s ease-out';
-		animation.style.opacity = 1;
-	}
+		if (scrollTop < screenSize) {
+			animation.style.animation = 'animation-down 1s ease-out';
+			animation.style.opacity = 1;
+		}
+	});
 }
 
 window.addEventListener('scroll', scrollCards);
