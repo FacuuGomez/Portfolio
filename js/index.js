@@ -44,7 +44,7 @@ function scrollAbout() {
 
 	let scrollTop = animation.getBoundingClientRect().top;
 
-	let screenSize = window.innerHeight / 2;
+	let screenSize = window.innerHeight / 1.5;
 
 	if (scrollTop < screenSize) {
 		animation.style.animation = 'move 1s ease-out';
@@ -54,20 +54,23 @@ function scrollAbout() {
 
 window.addEventListener('scroll', scrollAbout);
 
-function scrollCv() {
-	let animation = document.getElementById('animation-cv');
+function scrollTextAbout() {
+	let animations = document.getElementsByClassName('animation-cascade');
 
-	let scrollTop = animation.getBoundingClientRect().top;
+	let animationsArray = Array.from(animations);
+	animationsArray.forEach((animation) => {
+		let scrollTop = animation.getBoundingClientRect().top;
 
-	let screenSize = window.innerHeight;
+		let screenSize = window.innerHeight / 1;
 
-	if (scrollTop < screenSize) {
-		animation.style.animation = 'animation-left 1s ease-out';
-		animation.style.opacity = 1;
-	}
+		if (scrollTop < screenSize) {
+			animation.style.animation = 'animation-left 1s ease';
+			animation.style.opacity = 1;
+		}
+	});
 }
 
-window.addEventListener('scroll', scrollCv);
+window.addEventListener('scroll', scrollTextAbout);
 
 /* ---------------------------------------------------------------------------------------- */
 // ANIMATION PROYECTS
@@ -80,7 +83,7 @@ function scrollCards() {
 	animationsArray.forEach((animation) => {
 		let scrollTop = animation.getBoundingClientRect().top;
 
-		let screenSize = window.innerHeight / 1.5;
+		let screenSize = window.innerHeight / 1;
 
 		if (scrollTop < screenSize) {
 			animation.style.animation = 'animation-down 1s ease-out';
