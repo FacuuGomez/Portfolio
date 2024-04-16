@@ -163,6 +163,8 @@ nav {
 }
 
 .cover-info {
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(2px);
 	border-radius: 20px;
@@ -203,8 +205,13 @@ nav {
 
 .cover-icons {
 	display: flex;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 15px;
+}
+
+.icon img {
+	width: 40px;
+	filter: invert();
 }
 
 .icon a {
@@ -219,6 +226,11 @@ nav {
 
 .icon:active {
 	transform: translateY(3px);
+}
+
+.github-icon {
+	width: 50px;
+	filter: invert();
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -282,6 +294,7 @@ nav {
 	width: 300px;
 	border-radius: 20px;
 	transition: all 1s;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .cover-img-me img:hover {
@@ -404,7 +417,7 @@ nav {
 	height: 350px;
 	margin: 30px;
 	padding: 20px;
-	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(5px);
@@ -505,6 +518,7 @@ nav {
 }
 
 .skills {
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(2px);
 	border-radius: 20px;
@@ -659,6 +673,7 @@ nav {
 }
 
 textarea {
+	height: 70px;
 	font-family: 'Genos';
 	resize: none;
 	padding: 5px;
@@ -818,6 +833,8 @@ footer {
 
 .icon-footer img {
 	padding-left: 10px;
+	width: 30px;
+	filter: invert();
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -941,6 +958,7 @@ footer {
 	/* --------------------------- */
 
 	.cover-about {
+		height: 150%;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: flex-start;
@@ -954,14 +972,14 @@ footer {
 	}
 
 	.cover-text p {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 
 	.cover-text h1 {
 		display: flex;
 		justify-content: center;
-		background-image: var(--gradient-color);
-		padding-top: 15px;
+		background-image: linear-gradient(90deg, #008dd2 20%, #61ff56 80%);
+		padding: 15px 0px;
 	}
 
 	.cover-img-me {
@@ -976,11 +994,13 @@ footer {
 		width: 300px;
 		object-fit: cover;
 		border-radius: 50%;
-		/* padding-top: 20px; */
+		margin-top: 20px;
+		box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
 	}
 
 	.cover-btn-cv {
-		left: 37%;
+		/* left: 37%; */
+		margin: 20px 0px;
 	}
 
 	/* --------------------------- */
@@ -1030,6 +1050,10 @@ footer {
 
 	.cover-form {
 		margin: 0px 30px;
+	}
+
+	textarea {
+		height: 100px;
 	}
 
 	/* --------------------------- */
